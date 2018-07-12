@@ -22,6 +22,7 @@ defmodule SazeracWeb.Router do
   forward "/graphql",
   Absinthe.Plug,
   schema: SazeracWeb.Schema
+  
   # For the GraphiQL interactive interface, a must-have for happy frontend devs.
   forward "/graphiql",
   Absinthe.Plug.GraphiQL,
