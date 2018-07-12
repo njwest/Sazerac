@@ -1,8 +1,8 @@
 # Sazerac
 
-A VueJS-ready GraphQL API written in Elixir on Phoenix
+A VueJS-ready GraphQL API written in Elixir on Phoenix.
 
-## Getting Started
+## Running this API
 
 * Clone the repo
 * Install dependencies with `mix deps.get`
@@ -12,10 +12,31 @@ A VueJS-ready GraphQL API written in Elixir on Phoenix
 
 ## Learn about this stack
 
+#### Elixir
+
+- Fastest websocket/pubsub capabilities on the web.
+- The power of a functional language with Ruby-esque syntax simplicity.
+
+  * [Install Elixir](https://elixir-lang.org/install.html)
+    - [Windows](https://elixir-lang.org/install.html#windows)
+    - [Mac](https://elixir-lang.org/install.html#mac-os-x)
+    - [Unix](https://elixir-lang.org/install.html#unix-and-unix-like)
+    - [Raspberry Pi](https://elixir-lang.org/install.html#raspberry-pi)
+    - [Docker](https://elixir-lang.org/install.html#docker)
   * [Official Elixir Lang Docs (En)](https://elixir-lang.org/)
   * [Elixir Lang Guides (zh-hant)](https://elixirschool.com/zh-hant/)
+
+#### Phoenix
+
+  * [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
   * [Official Phoenix Framework Website](http://www.phoenixframework.org/)
+
+#### GraphQL Package
+- Absinthe is completely compliant with the latest GraphQL working paper.
   * [Absinthe GraphQL Repo](https://github.com/absinthe-graphql/absinthe)
+
+#### Database Adapter
+  * [Ecto](https://github.com/elixir-ecto/ecto)
 
 ##### A note about Phoenix 1.2 ~> 1.3
 
