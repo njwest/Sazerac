@@ -19,8 +19,12 @@ defmodule SazeracWeb.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", SazeracWeb do
-  #   pipe_through :api
-  # end
+  forward "/graphql",
+  Absinthe.Plug,
+  schema: SazeracWeb.Schema
+  # For the GraphiQL interactive interface, a must-have for happy frontend devs.
+  forward "/graphiql",
+  Sazerac.Plug.GraphiQL,
+  schema: SazeracWeb.Schema,
+  interface: :simple
 end
