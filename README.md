@@ -1,6 +1,6 @@
 # Sazerac
 
-A VueJS-ready GraphQL API written in Elixir on Phoenix.
+A VueJS-ready GraphQL API written in Elixir on Phoenix 1.3.
 
 ## Running this API
 
@@ -8,7 +8,7 @@ A VueJS-ready GraphQL API written in Elixir on Phoenix.
 * Install dependencies with `mix deps.get`
 * Create and migrate database with `mix ecto.create && mix ecto.migrate`
 * Run with `iex -S mix phx.server` (starts server with Interactive Elixir (iex) interface)
-* Visit http://localhost:4000/graphiql
+* Visit http://localhost:4000/graphiql and explore the GraphiQL UI. (hit Docs and search for User schema).
 
 ## Learn about this stack
 
