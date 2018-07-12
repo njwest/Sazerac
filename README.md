@@ -1,6 +1,6 @@
 # Sazerac
 
-A VueJS frontend + GraphQL API written in Elixir on Phoenix 1.3.
+A VueJS + GraphQL + Elixir + Phoenix 1.3 web application.
 
 ## Running this API
 
