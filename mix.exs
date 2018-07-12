@@ -5,7 +5,7 @@ defmodule Sazerac.Mixfile do
     [
       app: :sazerac,
       version: "0.0.1",
-      elixir: "~> 1.6.6",
+      elixir: "~> 1.6.4",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
       start_permanent: Mix.env == :prod,

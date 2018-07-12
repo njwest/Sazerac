@@ -1,4 +1,4 @@
-defmodule AbsintheWeb.Schema.AccountTypes do
+defmodule SazeracWeb.Schema.AccountTypes do
   use Absinthe.Schema.Notation
 
   @desc "A user"

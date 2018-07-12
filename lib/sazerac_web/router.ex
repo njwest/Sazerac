@@ -24,7 +24,7 @@ defmodule SazeracWeb.Router do
   schema: SazeracWeb.Schema
   # For the GraphiQL interactive interface, a must-have for happy frontend devs.
   forward "/graphiql",
-  Sazerac.Plug.GraphiQL,
+  Absinthe.Plug.GraphiQL,
   schema: SazeracWeb.Schema,
   interface: :simple
 end

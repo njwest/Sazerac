@@ -1,4 +1,4 @@
-defmodule Absinthe.Accounts do
+defmodule Sazerac.Accounts do
   # Stubbed out for now.
   def find_user(id) do
     %{
