@@ -1,9 +1,14 @@
 # Sazerac
 
-A VueJS + GraphQL/Absinthe + Elixir + Phoenix 1.3 web application.
+A VueJS + GraphQL + Elixir + Phoenix 1.3 web application.
+
+This foundational app is called Sazerac because it uses Absinthe GraphQL.
+
+Started at [github.com/njwest/sazerac](https://github.com/njwest/sazerac) then ported to TeLi Gitlab.
 
 ## Table of Contents
 
+- [File Structure](#file-structure)
 - [Installation](#installation)
 - [About](#about)
 - [Elixir](#elixir)
@@ -15,6 +20,19 @@ A VueJS + GraphQL/Absinthe + Elixir + Phoenix 1.3 web application.
 - [Database Adapter](#database-adapter)
 - [Bootstrap 4](#bootstrap-4)
 - [SASS](#sass)
+
+## File Structure
+
+This repo contains an Elixir/Phoenix app that builds and manages a VueJS Node web app.
+
+- The VueJS app lives in `assets/` inside the web app (Phoenix builds and manages the VueJS's node process(s)).
+- Elixir app logic lives in `lib/`.
+  - `lib/sazerac_web/` contains router/endpoint/controller/web code
+  - `lib/sazerac/` contains business logic (DB, repo logic)
+- Config lives in `config/`
+- Root app file (sort of like Node's `package.json`) lives in `mix.exs`.
+
+##### TODO: document how GraphQL schemas/resolvers/plugs work + where they live :dragon:
 
 ## Installation
 
@@ -42,11 +60,15 @@ Dev database config is located in `config/dev.exs`.
 
 About this stack:
 
-### Elixir
+## Elixir
 
-Fastest websocket/pubsub capabilities on the web.
+Elixir has the power of a functional language (Erlang OTP) with Ruby-esque syntactic eloquence.
 
-The power of a functional language with Ruby-esque syntax simplicity.
+Elixir also has a robust dev community with a wide array of powerful open-source packages (via Hex.pm), and Elixir engineers can directly access Erlang syntax + Erlang native modules from Elixir code. As a result, Elixir's package ecosystem is more mature and less crowded than Node's.
+
+Elixir has the fastest websocket/pubsub capabilities of any language, and Elixir apps can take advantage of 100% of a server's hardware resources/CPU threads without extra configuration/hacking/service worker-managed clusters.
+
+One example of Elixir's capabilities: you can run several Node servers on top of an Elixir server, have several databases running within the same container (as in a monolith), and still get microsecond render speeds from each frontend.
 
 * [Install Elixir](https://elixir-lang.org/install.html)
   - [Windows](https://elixir-lang.org/install.html#windows)
@@ -57,25 +79,27 @@ The power of a functional language with Ruby-esque syntax simplicity.
 * [Official Elixir Lang Docs (En)](https://elixir-lang.org/)
 * [Elixir Lang Guides (zh-hant)](https://elixirschool.com/zh-hant/)
 
-### Phoenix
+## Phoenix
+
+The Phoenix Framework is a powerful Elixir web server framework. Phoenix is to Elixir what Rails is to Ruby.
 
 * [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 * [Official Phoenix Framework Website](http://www.phoenixframework.org/)
 
-### GraphQL
+## GraphQL
 
-#### Vue-Apollo
+### Vue-Apollo
 
 The **VueJS** layer of this application uses [Vue-Apollo](https://github.com/Akryum/vue-apollo) to communicate with Absinthe GraphQL.
 
-#### Absinthe
+### Absinthe
 
 Absinthe meets full specs and compliance with the latest GraphQL working paper.
 
 * [Absinthe GraphQL Docs/Repo](https://github.com/absinthe-graphql/absinthe)
 * [Latest GraphQL Release Specs](https://facebook.github.io/graphql/)
 
-#### About GraphQL
+### About GraphQL
 
 GraphQL is an API query language that can get many resources from different sources with a single request. When used properly, GraphQL can follow references between resources in addition to their properties.
 
@@ -85,21 +109,21 @@ For more information, visit [graphql.org.](https://graphql.org/)
 
 Also, check out [GraphQL: Common Questions](https://www.howtographql.com/advanced/5-common-questions/) and [How to GraphQL](https://www.howtographql.com/).
 
-### Database Adapter
+## Database Adapter
 
-Ecto can be used with any database.
+Elixir's Ecto DB adapter package can be used with any database.
 
-* [Ecto Open-source Repo](https://github.com/elixir-ecto/ecto)
+* [Ecto repo + Docs](https://github.com/elixir-ecto/ecto)
 
-### Bootstrap 4
+## Bootstrap 4
 
 [Bootstrap 4 docs](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
-### SASS
+## SASS
 
-[SASS Docs](https://sass-lang.com/guide)
+[SASS docs](https://sass-lang.com/guide)
 
-#### A note about Phoenix 1.2 ~> 1.3
+### A note about Phoenix 1.2 ~> 1.3
 
 The update of Phoenix 1.2 to **Phoenix 1.3** involved directory structure changes and improvement of Phoenix CLI commands.
 
