@@ -1,8 +1,14 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <h2>The following was loaded over Graphql:</h2>
-    <h1>User: {{ user.name }}</h1>
+    <div class="container">
+      <div class="card greeting-card mx-auto">
+        <div class="card-body align-middle">
+          <h1>{{ msg }}</h1>
+          <h2>The following was loaded over Graphql:</h2>
+          <h1>User: {{ user.name }}</h1>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -13,12 +19,12 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js & Phoenix & GraphQL App',
+      msg: 'Welcome to Your Vue.js + GraphQL App, powered by Elixir',
       user: ""
     }
   },
  apollo: {
-    // Apollo specific options
+    // Apollo  options
     user: gql`{
       user(id: "1"){
         name
@@ -27,6 +33,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+</style>
 
 <style lang="scss">
 #app {
@@ -55,4 +65,10 @@ li {
 a {
   color: #42b983;
 }
+
+.greeting-card{
+  min-height: 500px;
+  max-width: 600px;
+}
+
 </style>

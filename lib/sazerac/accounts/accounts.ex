@@ -1,8 +1,8 @@
 defmodule Sazerac.Accounts do
-  # Stubbed out for now.
   def find_user(id) do
+    # Dummy response
     %{
-      name: "Fake user",
+      name: "Some username",
       id: id
     }
   end

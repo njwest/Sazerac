@@ -5,11 +5,10 @@ import { HttpLink } from 'apollo-link-http'
 import VueApollo from 'vue-apollo'
 
 
-//
 import App from './App.vue'
-//
+
 const httpLink = new HttpLink({
-  // You should use an absolute URL here
+  // You should use an absolute URL for this graphql endpoint
   uri: 'http://localhost:4000/graphql',
 })
 

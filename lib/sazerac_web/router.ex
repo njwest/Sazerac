@@ -19,11 +19,12 @@ defmodule SazeracWeb.Router do
     get "/", PageController, :index
   end
 
+  # For the GraphQL Endpoint 
   forward "/graphql",
   Absinthe.Plug,
   schema: SazeracWeb.Schema
-  
-  # For the GraphiQL interactive interface, a must-have for happy frontend devs.
+
+  # For the GraphiQL interactive interface :D
   forward "/graphiql",
   Absinthe.Plug.GraphiQL,
   schema: SazeracWeb.Schema,

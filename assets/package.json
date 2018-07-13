@@ -2,7 +2,7 @@
   "name": "Sazerac",
   "description": "Vue.js / GraphQL / Elixir",
   "version": "0.6.0",
-  "author": "mail@nickwe.st",
+  "author": "Nick West",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -10,13 +10,14 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11",
-    "graphql": "^0.11.0",
-    "vue-apollo": "^3.0.0-alpha.2",
-    "apollo-client": "^2.0.0",
     "apollo-cache-inmemory": "^1.1.4",
+    "apollo-client": "^2.0.0",
     "apollo-link-http": "^1.3.2",
-    "graphql-tag": "^2.6.0"
+    "bootstrap": "^4.1.2",
+    "graphql": "^0.11.0",
+    "graphql-tag": "^2.6.0",
+    "vue": "^2.5.11",
+    "vue-apollo": "^3.0.0-alpha.2"
   },
   "browserslist": [
     "> 1%",

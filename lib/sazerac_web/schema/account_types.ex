@@ -4,6 +4,6 @@ defmodule SazeracWeb.Schema.AccountTypes do
   @desc "A user"
   object :user do
     field :id, :id # clients can get the user id
-    field :name, :string # clients can also ask for the name field
+    field :name, :string # clients can also get the name field
   end
 end
