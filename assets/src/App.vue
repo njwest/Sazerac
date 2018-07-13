@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="container">
-      <div class="card greeting-card mx-auto">
-        <div class="card-body align-middle">
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="align-self-center">
           <h1>{{ msg }}</h1>
           <h2>The following was loaded over Graphql:</h2>
           <h1>User: {{ user.name }}</h1>
