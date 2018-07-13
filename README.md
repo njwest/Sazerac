@@ -7,6 +7,7 @@ A VueJS + GraphQL + Elixir + Phoenix 1.3 web application.
 * Clone the repo
 * Install dependencies with `mix deps.get`
 * Create and migrate database with `mix ecto.create && mix ecto.migrate`
+* Install Node modules with `cd assets && yarn install`, or `cd assets && npm i` if you do not have **Yarn** installed.
 * Run with `mix phx.server` or `iex -S mix phx.server` (iex = Interactive Elixir CLI interface)
 * Visit http://localhost:4000/graphiql and explore the GraphiQL UI. (hit Docs and search for User schema).
 
