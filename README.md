@@ -1,10 +1,6 @@
 # Sazerac
 
-A VueJS + GraphQL + Elixir + Phoenix 1.3 web application.
-
-This foundational app is called Sazerac because it uses Absinthe GraphQL.
-
-Started at [github.com/njwest/sazerac](https://github.com/njwest/sazerac) then ported to TeLi Gitlab.
+A VueJS + Absinthe GraphQL + Elixir + Phoenix 1.3 web application.
 
 ## Table of Contents
 
